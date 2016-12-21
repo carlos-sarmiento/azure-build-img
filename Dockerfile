@@ -1,5 +1,7 @@
 FROM microsoft/dotnet:1.1.0-sdk-projectjson
 
+# Code taken from microsoft/azure-cli
+
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 ENV AZURE_CLI_VERSION "0.10.8"
@@ -29,3 +31,7 @@ RUN apt-get update -qq && \
       azure
 
 RUN azure config mode arm
+
+# Additional code
+
+RUN apt-get install -y gettext
