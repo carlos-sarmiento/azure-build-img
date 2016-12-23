@@ -34,4 +34,4 @@ RUN azure config mode arm
 
 # Additional code
 
-RUN apt-get update && apt-get install -y gettext ncftp
+RUN apt-get update && apt-get install -y gettext ncftp jq
