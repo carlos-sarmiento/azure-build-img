@@ -5,7 +5,7 @@ FROM microsoft/dotnet:1.1.0-sdk-projectjson
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 ENV AZURE_CLI_VERSION "0.10.8"
-ENV NODEJS_APT_ROOT "node_4.x"
+ENV NODEJS_APT_ROOT "node_6.x"
 ENV NODEJS_VERSION "6.9.4"
 
 RUN apt-get update -qq && \
