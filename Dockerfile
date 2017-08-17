@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:1.1.0-sdk-projectjson
+FROM microsoft/dotnet:latest
 
 # Code taken from microsoft/azure-cli
 
